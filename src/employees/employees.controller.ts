@@ -11,7 +11,7 @@ import {
 } from '@nestjs/common';
 import { SkipThrottle, Throttle } from '@nestjs/throttler';
 import { Prisma } from '@prisma/client';
-import { MyLoggerService } from 'src/my-logger/my-logger.service';
+import { MyLoggerService } from '../my-logger/my-logger.service';
 import { EmployeesService } from './employees.service';
 
 @SkipThrottle()
