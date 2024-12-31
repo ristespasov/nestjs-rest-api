@@ -32,7 +32,7 @@ export class AllExceptionsFilter extends BaseExceptionFilter {
       response: '',
     };
 
-    // Add more Prisma Error Types if you want
+    // Add more Prisma Error Types if needed
     if (exception instanceof HttpException) {
       myResponseObj.statusCode = exception.getStatus();
       myResponseObj.response = exception.getResponse();
